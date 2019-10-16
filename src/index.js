@@ -1,36 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import AppHeader from "./components/AppHeader";
+import SearchPanel from "./components/SearchPanel";
+import ToDoList from "./components/TodoList";
 // import './index.css';
 // import App from './App';
 // import * as serviceWorker from './serviceWorker';
 
-const ToDoList = () => {
-  return (
-    <ul>
-            <li>Learn React</li>
-            <li>Drink Coffee</li>
-        </ul>
-    )
-};
-
-const AppHeader = () => {
-    return(
-        <h1>My ToDo list</h1>
-    )
-};
-
-const SearchPanel = () => {
-    return (
-        <input placeholder="search"/>
-    )
-};
-
 const App = () => {
+
+    const todoData = [
+        { label: 'Drink Coffee', important: false, id: 1 },
+        { label: 'Make Awesome React App', important: true, id: 2 },
+        { label: 'Have a lunch', important: false, id: 3 }
+    ];
+
     return (
-        <div>
-        <AppHeader/>
-        <SearchPanel/>
-        <ToDoList/>
+    <div>
+        <AppHeader />
+        <SearchPanel />
+        <ToDoList todos={ todoData } />
     </div>
     )
 };
