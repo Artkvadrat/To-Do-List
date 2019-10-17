@@ -1,8 +1,12 @@
 import React from 'react';
+import './AppHeader.css';
 
 const AppHeader = () => {
     return(
-        <h1>My ToDo list</h1>
+        <div className="appHeader">
+            <h1 className="header">Todo List</h1>
+            <p className="restInfo">1 more to do, 3 done</p>
+        </div>
     )
 };
 

@@ -1,0 +1,10 @@
+.appHeader {
+    display: flex;
+    justify-content: space-between;
+}
+.restInfo {
+    margin-top: 24px;
+    line-height: 1rem;
+    margin-bottom: 0;
+    color: gray;
+}

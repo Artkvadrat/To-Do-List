@@ -2,14 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36378c13-5a94-4471-98dd-c7d0fa8d7844" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/AppHeader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SearchPanel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TodoList.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TodoList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TodoListItem.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TodoListItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/AppHeader.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ItemStatusFilter.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ItemStatusFilter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SearchPanel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AppHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppHeader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SearchPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchPanel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TodoList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TodoList.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TodoListItem.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TodoListItem.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TodoListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TodoListItem.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,7 +62,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -103,7 +108,8 @@
       <workItem from="1570961953468" duration="67000" />
       <workItem from="1571160750977" duration="2452000" />
       <workItem from="1571229708894" duration="2297000" />
-      <workItem from="1571247210148" duration="2515000" />
+      <workItem from="1571247210148" duration="2583000" />
+      <workItem from="1571329222097" duration="7330000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit after video &quot;React components&quot;">
       <created>1570728083577</created>
@@ -112,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570728083577</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Commit before adding a ccs files and style.">
+      <created>1571251415714</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1571251415714</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,6 +146,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Commit after video &quot;React components&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="First Commit after video &quot;React components&quot;" />
+    <MESSAGE value="Commit before adding a ccs files and style." />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit before adding a ccs files and style." />
   </component>
 </project>

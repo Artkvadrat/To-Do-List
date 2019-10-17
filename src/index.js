@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom';
 import AppHeader from "./components/AppHeader";
 import SearchPanel from "./components/SearchPanel";
 import ToDoList from "./components/TodoList";
-// import './index.css';
+import ItemStatusFilter from "./components/ItemStatusFilter";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './index.css';
 // import App from './App';
 // import * as serviceWorker from './serviceWorker';
 
@@ -16,9 +18,12 @@ const App = () => {
     ];
 
     return (
-    <div>
+    <div className="myContainer">
         <AppHeader />
-        <SearchPanel />
+        <div className="d-flex justify-content-between">
+            <SearchPanel />
+            <ItemStatusFilter />
+        </div>
         <ToDoList todos={ todoData } />
     </div>
     )
