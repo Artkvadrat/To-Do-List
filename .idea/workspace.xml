@@ -2,21 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36378c13-5a94-4471-98dd-c7d0fa8d7844" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/App/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/App/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AppHeader.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppHeader/AppHeader.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AppHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppHeader/AppHeader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ItemStatusFilter.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemStatusFilter/ItemStatusFilter.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ItemStatusFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemStatusFilter/ItemStatusFilter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SearchPanel.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchPanel/SearchPanel.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SearchPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchPanel/SearchPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TodoList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TodoList/TodoList.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TodoList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TodoList/TodoList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TodoListItem.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TodoListItem/TodoListItem.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TodoListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TodoListItem/TodoListItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ItemStatusFilter/ItemStatusFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemStatusFilter/ItemStatusFilter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TodoListItem/TodoListItem.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TodoListItem/TodoListItem.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TodoListItem/TodoListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TodoListItem/TodoListItem.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -123,7 +113,10 @@
       <workItem from="1571229708894" duration="2297000" />
       <workItem from="1571247210148" duration="2583000" />
       <workItem from="1571329222097" duration="7448000" />
-      <workItem from="1571419829256" duration="1532000" />
+      <workItem from="1571419829256" duration="1578000" />
+      <workItem from="1571491337953" duration="1333000" />
+      <workItem from="1571555169632" duration="1520000" />
+      <workItem from="1571591516936" duration="2926000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit after video &quot;React components&quot;">
       <created>1570728083577</created>
@@ -146,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571337397837</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Refactoring code in directories.">
+      <created>1571421393790</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1571421393790</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,6 +169,7 @@
     <MESSAGE value="First Commit after video &quot;React components&quot;" />
     <MESSAGE value="Commit before adding a ccs files and style." />
     <MESSAGE value="Files with styles, but without scripts." />
-    <option name="LAST_COMMIT_MESSAGE" value="Files with styles, but without scripts." />
+    <MESSAGE value="Refactoring code in directories." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring code in directories." />
   </component>
 </project>

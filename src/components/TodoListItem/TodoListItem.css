@@ -14,11 +14,11 @@
     user-select: none;
 }
 
-.todoListItemLabel.done .todoListItemLabel {
+.done  {
     text-decoration: line-through;
 }
 
-.todoListItem.important .todoListItemLabel {
+.important {
     font-weight: bold;
     color: steelblue;
 }

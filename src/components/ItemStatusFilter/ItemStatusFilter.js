@@ -1,10 +1,11 @@
-import React from "react";
+import React, { Component } from "react";
 import './ItemStatusFilter.css';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 
-const ItemStatusFilter = () => {
-    return (
-        <ButtonGroup>
+class ItemStatusFilter extends Component {
+    render() {
+        return (
+            <ButtonGroup>
             <button type="button"
                     className="btn btn-info">All</button>
             <button type="button"
@@ -12,7 +13,8 @@ const ItemStatusFilter = () => {
             <button type="button"
                     className="btn btn-outline-secondary">Done</button>
         </ButtonGroup>
-    )
-};
+        )
+    }
+}
 
 export default ItemStatusFilter;
