@@ -1,0 +1,10 @@
+.addPanelForm {
+    margin-top: 25px;
+}
+.addPanelForm input{
+    height: 38px;
+    padding-left: 10px;
+    width: 210px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
