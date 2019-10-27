@@ -1,13 +1,17 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './AppHeader.css';
 
-const AppHeader = () => {
-    return(
-        <div className="appHeader">
+class AppHeader extends Component {
+
+    render() {
+        const { toDo, done } = this.props;
+        return(
+            <div className="appHeader">
             <h1 className="header">Todo List</h1>
-            <p className="restInfo">1 more to do, 3 done</p>
+            <p className="restInfo">{ toDo } more to do, {done} done</p>
         </div>
-    )
-};
+        )
+    }
+}
 
 export default AppHeader;
