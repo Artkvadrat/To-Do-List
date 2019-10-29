@@ -9,7 +9,7 @@ import ItemAddPanel from "../ItemAddPanel/ItemAddPanel";
 
 class App extends Component {
 
-    maxId = 20;
+    maxId = 100;
 
     state = {
         todoData: [
@@ -24,7 +24,8 @@ class App extends Component {
             label: text,
             done: false,
             important: false,
-            id: this.maxId++
+            id: this.maxId++,
+            display: true
         }
     }
 
@@ -68,13 +69,61 @@ class App extends Component {
         this.setState( ({ todoData }) => {
             return {
                 todoData: this.toggleProperty(todoData, 'done', id)
-        }
+            }
         });
     };
 
+    onAllClick = () => {
+        this.setState( ({ todoData }) => {
+            let newArray = todoData;
+            newArray.forEach( (item, i, Array) => {
+                Array[i].display = true;
+            });
+
+            return {
+                todoData: newArray
+            }
+        });
+    };
+
+    onActiveClick = () => {
+        this.setState( ({ todoData }) => {
+            let newArray = todoData;
+
+            newArray.forEach( (item, i, Array) => {
+                Array[i].display = true;
+                if ( Array[i].done ) {
+                    Array[i].display = false;
+                }
+            });
+
+            return {
+                todoData: newArray
+            }
+        });
+    };
+
+    onDoneClick = () => {
+        this.setState( ({ todoData }) => {
+            let newArray = todoData;
+
+            newArray.forEach( (item, i, Array) => {
+                Array[i].display = true;
+                if ( !Array[i].done ) {
+                    Array[i].display = false;
+                }
+            });
+
+            return {
+                todoData: newArray
+            }
+        });
+    };
+
+
     render() {
 
-        const { todoData } = this.state;
+        const { todoData, buttonsState } = this.state;
 
         const doneCount = todoData.filter( (el) => el.done ).length;
         const todoCount = todoData.length - doneCount;
@@ -84,9 +133,12 @@ class App extends Component {
                 <AppHeader toDo={todoCount} done={doneCount}/>
                 <div className="d-flex justify-content-between">
                     <SearchPanel />
-                    <ItemStatusFilter />
+                    <ItemStatusFilter array={ buttonsState }
+                                      onAllClick={ this.onAllClick }
+                                      onActiveClick={ this.onActiveClick }
+                                      onDoneClick={ this.onDoneClick } />
                 </div>
-                <ToDoList todos={ this.state.todoData }
+                <ToDoList todos={ todoData }
                           onDeleted={ this.DeleteItem }
                           onToggleDone={ this.onToggleDone }
                           onToggleImportant={ this.onToggleImportant }

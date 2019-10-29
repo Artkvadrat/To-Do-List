@@ -4,8 +4,11 @@
     <list default="true" id="36378c13-5a94-4471-98dd-c7d0fa8d7844" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AppHeader/AppHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppHeader/AppHeader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ItemAddPanel/ItemAddPanel.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemAddPanel/ItemAddPanel.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ItemAddPanel/ItemAddPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemAddPanel/ItemAddPanel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ItemStatusFilter/ItemStatusFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemStatusFilter/ItemStatusFilter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/TodoList/TodoList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TodoList/TodoList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TodoListItem/TodoListItem.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TodoListItem/TodoListItem.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/TodoListItem/TodoListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TodoListItem/TodoListItem.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -122,7 +125,9 @@
       <workItem from="1571939202032" duration="657000" />
       <workItem from="1571940865460" duration="482000" />
       <workItem from="1571941935524" duration="3472000" />
-      <workItem from="1572195055864" duration="4523000" />
+      <workItem from="1572195055864" duration="4738000" />
+      <workItem from="1572284539978" duration="7011000" />
+      <workItem from="1572364820759" duration="8555000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit after video &quot;React components&quot;">
       <created>1570728083577</created>
@@ -173,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571946254358</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="I've redid App component for AppHeader component. Now it can to count amount of done elements. Also added a new function to make a todoData array and add a new element in this array.">
+      <created>1572201202551</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1572201202551</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,6 +211,7 @@
     <MESSAGE value="Refactoring code in directories." />
     <MESSAGE value="Added possibility to delete items." />
     <MESSAGE value="Added a field to add a new item. But working only button." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a field to add a new item. But working only button." />
+    <MESSAGE value="I've redid App component for AppHeader component. Now it can to count amount of done elements. Also added a new function to make a todoData array and add a new element in this array." />
+    <option name="LAST_COMMIT_MESSAGE" value="I've redid App component for AppHeader component. Now it can to count amount of done elements. Also added a new function to make a todoData array and add a new element in this array." />
   </component>
 </project>

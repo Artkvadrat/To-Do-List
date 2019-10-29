@@ -1,13 +1,38 @@
 import React, { Component } from "react";
 import './ItemAddPanel.css';
-import Button from 'react-bootstrap/Button';
 
 class ItemAddPanel extends Component {
+
+    state ={
+        label: ''
+    };
+
+    onLabelChange = (event) => {
+        this.setState({
+           label: event.target.value
+        });
+    };
+
+    onSubmit = (event) => {
+        event.preventDefault();
+        this.props.onItemAdded( this.state.label );
+        this.setState({
+            label: ''
+        });
+    };
+
     render() {
         return (
-            <div className="d-flex justify-content-between addPanelForm">
-                <input placeholder="Add item" className="ItemSearch"/>
-                <Button variant="outline-info" onClick={ () => this.props.onItemAdded('add') }>Add Item</Button>
+            <div>
+                <form className="d-flex justify-content-between addPanelForm"
+                      onSubmit={ this.onSubmit }>
+                    <input type="text"
+                           placeholder="Add a new item"
+                           className="ItemSearch form-control"
+                           onChange={ this.onLabelChange }
+                           value={ this.state.label }/>
+                    <button className="btn btn-outline-info" >Add Item</button>
+                </form>
             </div>
         )
     }
