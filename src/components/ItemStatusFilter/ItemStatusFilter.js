@@ -30,23 +30,23 @@ class ItemStatusFilter extends Component {
     render() {
 
         const { buttonsState } = this.state;
-        const { onAllClick, onActiveClick, onDoneClick } = this.props;
+        const { onPanelClick } = this.props;
         let classActive = 'btn btn-info';
         let classPassive = 'btn btn-outline-secondary';
 
         let onAllBut = () => {
             this.onButtonClick( buttonsState[0].id );
-            onAllClick();
+            onPanelClick('all');
         };
 
         let onActiveBut = () => {
             this.onButtonClick( buttonsState[1].id );
-            onActiveClick();
+            onPanelClick('active');
         };
 
         let onDoneBut = () => {
             this.onButtonClick( buttonsState[2].id );
-            onDoneClick();
+            onPanelClick('done');
         };
 
         return (

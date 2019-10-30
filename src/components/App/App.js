@@ -73,11 +73,16 @@ class App extends Component {
         });
     };
 
-    onAllClick = () => {
+    hideItem = ( array ) => {
         this.setState( ({ todoData }) => {
             let newArray = todoData;
-            newArray.forEach( (item, i, Array) => {
+            newArray.forEach( (it, i, Array) => {
                 Array[i].display = true;
+                array.forEach( (item, j, element) => {
+                    if ( Array[i] === element[j]){
+                        Array[i].display = false;
+                    }
+                });
             });
 
             return {
@@ -86,40 +91,23 @@ class App extends Component {
         });
     };
 
-    onActiveClick = () => {
-        this.setState( ({ todoData }) => {
-            let newArray = todoData;
+    onPanelClick = ( cond ) => {
+        switch (cond) {
+            case 'all':
+                this.hideItem( [] );
+                break;
 
-            newArray.forEach( (item, i, Array) => {
-                Array[i].display = true;
-                if ( Array[i].done ) {
-                    Array[i].display = false;
-                }
-            });
-
-            return {
-                todoData: newArray
-            }
-        });
+            case 'active':
+                this.hideItem( this.state.todoData.filter( (item) => item.done) );
+                break;
+            case 'done':
+                this.hideItem( this.state.todoData.filter( (item) => !item.done) );
+                break;
+            default:
+                this.hideItem( this.state.todoData );
+                break;
+        }
     };
-
-    onDoneClick = () => {
-        this.setState( ({ todoData }) => {
-            let newArray = todoData;
-
-            newArray.forEach( (item, i, Array) => {
-                Array[i].display = true;
-                if ( !Array[i].done ) {
-                    Array[i].display = false;
-                }
-            });
-
-            return {
-                todoData: newArray
-            }
-        });
-    };
-
 
     render() {
 
@@ -134,9 +122,7 @@ class App extends Component {
                 <div className="d-flex justify-content-between">
                     <SearchPanel />
                     <ItemStatusFilter array={ buttonsState }
-                                      onAllClick={ this.onAllClick }
-                                      onActiveClick={ this.onActiveClick }
-                                      onDoneClick={ this.onDoneClick } />
+                                      onPanelClick={ this.onPanelClick }/>
                 </div>
                 <ToDoList todos={ todoData }
                           onDeleted={ this.DeleteItem }
