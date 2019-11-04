@@ -6,3 +6,17 @@
     padding-left: 10px;
     width: 250px;
 }
+
+.none {
+    display: none;
+}
+
+.active {
+
+    display: block;
+}
+
+.color {
+    margin-top: 10px;
+    color: red;
+}
