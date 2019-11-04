@@ -34,36 +34,26 @@ class ItemStatusFilter extends Component {
         let classActive = 'btn btn-info';
         let classPassive = 'btn btn-outline-secondary';
 
-        let onAllBut = () => {
-            this.onButtonClick( buttonsState[0].id );
-            onPanelClick('all');
-        };
-
-        let onActiveBut = () => {
-            this.onButtonClick( buttonsState[1].id );
-            onPanelClick('active');
-        };
-
-        let onDoneBut = () => {
-            this.onButtonClick( buttonsState[2].id );
-            onPanelClick('done');
+        let buttonClick = ( name, num ) => {
+            this.onButtonClick( buttonsState[num].id );
+            onPanelClick(`${name}`);
         };
 
         return (
             <ButtonGroup>
                 <button type="button"
                         className={ buttonsState[0].active ? classActive : classPassive }
-                            onClick={ onAllBut }>
+                            onClick={ ()=>(buttonClick('all', 0)) }>
                     { buttonsState[0].text }
                 </button>
                 <button type="button"
                         className={ buttonsState[1].active ? classActive : classPassive }
-                        onClick={ onActiveBut }>
+                        onClick={ ()=>(buttonClick('active', 1)) }>
                     { buttonsState[1].text }
                 </button>
                 <button type="button"
                         className={ buttonsState[2].active ? classActive : classPassive }
-                        onClick={ onDoneBut }>
+                        onClick={ ()=>(buttonClick('done', 2)) }>
                     { buttonsState[2].text }
                 </button>
 

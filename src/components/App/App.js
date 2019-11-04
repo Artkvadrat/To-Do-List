@@ -104,8 +104,26 @@ class App extends Component {
                 this.hideItem( this.state.todoData.filter( (item) => !item.done) );
                 break;
             default:
-                this.hideItem( this.state.todoData );
+                this.hideItem( [] );
                 break;
+        }
+    };
+
+    searchItem = ( e ) => {
+        let text = e.target.value.toLowerCase();
+        if ( text === '' ) {
+            this.hideItem( [] );
+        } else {
+            let newArray = this.state.todoData;
+            let idx;
+            newArray.forEach( (item, i, Array) => {
+                let label = Array[i].label.toLowerCase();
+                if ( label.indexOf( text ) >= 0) {
+                    idx = i;
+                }
+            });
+            newArray = [ ...newArray.slice(0, idx), ...newArray.slice(idx + 1) ];
+            this.hideItem( newArray );
         }
     };
 
@@ -120,7 +138,7 @@ class App extends Component {
             <div className="myContainer">
                 <AppHeader toDo={todoCount} done={doneCount}/>
                 <div className="d-flex justify-content-between">
-                    <SearchPanel />
+                    <SearchPanel searchItem={ this.searchItem }/>
                     <ItemStatusFilter array={ buttonsState }
                                       onPanelClick={ this.onPanelClick }/>
                 </div>
